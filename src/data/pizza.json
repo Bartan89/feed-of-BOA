@@ -11,9 +11,9 @@
     "base": "thin",
     "sauce": "tomato",
     "toppings": ["pineapple", "ham"],
-    "name": "Bart's sacrilege",
+    "name": "Bart's and 15% of Australia sacrilege",
     "cheese": true,
-    "popularity": 1
+    "popularity": 2
   },
   {
     "base": "thin",

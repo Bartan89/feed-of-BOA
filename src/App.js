@@ -1,6 +1,8 @@
 import React from "react";
 import MenuItem from "./components/MenuItem";
-import data from "./data/pizza.json";
+
+import Post from "./components/Post";
+import pizzaData from "./data/pizza.json";
 import "./App.css";
 
 const menuItems = ["Home", "About", "Trending Aticles", "Contact"];
@@ -15,6 +17,17 @@ function App() {
           return <MenuItem title={title} index={i + 1} />;
         })}
       </ol>
+
+      {pizzaData.map((pizza) => {
+        console.log(pizza);
+        return (
+          <Post
+            name={pizza.name}
+            popularity={pizza.popularity}
+            description={pizza.cheese}
+          />
+        );
+      })}
 
       <header className="App-header"></header>
     </div>
