@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Playground />
+      <Playground title="try" />
       <header className="App-header"></header>
     </div>
   );

@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Playground() {
+export default function Playground(props) {
   return (
     <div>
-      <h1>test</h1>
+      <h1>test {props.title}</h1>
     </div>
   );
 }
