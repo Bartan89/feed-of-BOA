@@ -1,0 +1,42 @@
+[
+  {
+    "base": "thin",
+    "sauce": "tomato",
+    "toppings": ["salami", "ham", "mushrooms", "paprika"],
+    "name": "Ali's special pizza",
+    "cheese": true,
+    "popularity": 5
+  },
+  {
+    "base": "thin",
+    "sauce": "tomato",
+    "toppings": ["pineapple", "ham"],
+    "name": "Bart's sacrilege",
+    "cheese": true,
+    "popularity": 1
+  },
+  {
+    "base": "thin",
+    "sauce": "tomato",
+    "toppings": ["rucola", "prosciutto", "parmeggiano"],
+    "name": "Truly Mediterranean",
+    "cheese": true,
+    "popularity": 4
+  },
+  {
+    "base": "thin",
+    "sauce": "tomato",
+    "toppings": ["salami", "ham", "mushrooms", "paprika"],
+    "name": "Ali's special pizza",
+    "cheese": true,
+    "popularity": 5
+  },
+  {
+    "base": "thin",
+    "sauce": "tomato",
+    "toppings": ["salami", "ham", "mushrooms", "paprika"],
+    "name": "Ali's special pizza",
+    "cheese": true,
+    "popularity": 5
+  }
+]
