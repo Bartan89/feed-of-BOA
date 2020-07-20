@@ -1,11 +1,12 @@
 import React from "react";
 import MenuItem from "./components/MenuItem";
-
+import data from "./data/pizza.json";
 import "./App.css";
 
-const menuItems = ["Home", "ABout", "Trending Aticles", "Contact"];
+const menuItems = ["Home", "About", "Trending Aticles", "Contact"];
 
 function App() {
+  data.map(() => console.log("test"));
   return (
     <div className="App">
       <ol>
