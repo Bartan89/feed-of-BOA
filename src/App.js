@@ -1,5 +1,4 @@
 import React from "react";
-import Playground from "./components/Playground";
 import MenuItem from "./components/MenuItem";
 
 import "./App.css";
@@ -9,7 +8,6 @@ const menuItems = ["Home", "ABout", "Trending Aticles", "Contact"];
 function App() {
   return (
     <div className="App">
-      <Playground title="try" />
       <ol>
         {menuItems.map((title, i) => {
           console.log(title, i);
