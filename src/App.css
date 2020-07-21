@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,8 +13,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +34,23 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.App-header {
+  background-color: #282c34;
+  color: #fff;
+}
+.head-col {
+  margin: 25px 20px 0px 20px;
+  border: #fff;
+  border-style: solid;
+  padding: 10px;
+}
+
+.post-column {
+  max-width: 31%;
+  margin: 20px;
+  border: #fff;
+  border-style: solid;
+  padding: 10px;
 }
