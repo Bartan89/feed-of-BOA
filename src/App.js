@@ -8,28 +8,39 @@ import "./App.css";
 const menuItems = ["Home", "About", "Trending Aticles", "Contact"];
 
 function App() {
-  data.map(() => console.log("test"));
   return (
     <div className="App">
-      <ol>
-        {menuItems.map((title, i) => {
-          console.log(title, i);
-          return <MenuItem title={title} index={i + 1} />;
-        })}
-      </ol>
+      <header className="App-header">
+        <div class="row">
+          <div class="col-lg-12 head-col">
+            <p>One of three columns</p>
+            <p>One of three columns</p>
+          </div>
+          <div class="col-lg col-sm post-column">
+            <ol>
+              {menuItems.map((title, i) => {
+                console.log(title, i);
+                return <MenuItem title={title} index={i + 1} />;
+              })}
+            </ol>
+          </div>
 
-      {pizzaData.map((pizza) => {
-        console.log(pizza);
-        return (
-          <Post
-            name={pizza.name}
-            popularity={pizza.popularity}
-            description={pizza.cheese}
-          />
-        );
-      })}
+          <div class="col-lg col-sm post-column">
+            {pizzaData.map((pizza) => {
+              console.log(pizza);
+              return (
+                <Post
+                  name={pizza.name}
+                  popularity={pizza.popularity}
+                  description={pizza.cheese}
+                />
+              );
+            })}
+          </div>
 
-      <header className="App-header"></header>
+          <div class="col-lg col-sm post-column">One of three columns</div>
+        </div>
+      </header>
     </div>
   );
 }
