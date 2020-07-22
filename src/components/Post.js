@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import Rating from "./Rating";
 
 export default function Post(props) {
   return (
-    <div class="card-body bg-light mb-3 text-dark">
-      <h5 class="card-title">{props.name}</h5>
-      <h4>{props.popularity}</h4>
-      <p class="card-text">
-        {props.description === true ? "has cheese" : "no cheese"}
-      </p>
-      <a href="#" class="btn btn-primary">
-        Go somewhere
-      </a>
+    <div>
+      <span class="card">
+        <span class="card-body">
+          <h5 class="card-title text-dark">{props.name}</h5>
+          <p class="card-text text-dark">
+            <Rating rating={props.popularity} />
+          </p>
+          {props.toppings.map((x) => (
+            <span class="badge badge-pill badge-primary m-1">{x}</span>
+          ))}
+        </span>
+      </span>
     </div>
   );
 }

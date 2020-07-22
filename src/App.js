@@ -1,11 +1,11 @@
 import React from "react";
 import MenuItem from "./components/MenuItem";
 
-import Post from "./components/Post";
+import Posts from "./components/Posts";
 import pizzaData from "./data/pizza.json";
 import "./App.css";
 
-const menuItems = ["Home", "About", "Trending Aticles", "Contact"];
+//const menuItems = ["Home", "About", "Trending Articles", "Contact"];
 
 function App() {
   return (
@@ -18,24 +18,14 @@ function App() {
           </div>
           <div class="col-lg col-sm post-column">
             <ol>
-              {menuItems.map((title, i) => {
-                console.log(title, i);
+              {/* {menuItems.map((title, i) => {
                 return <MenuItem title={title} index={i + 1} />;
-              })}
+              })} */}
             </ol>
           </div>
 
           <div class="col-lg col-sm post-column">
-            {pizzaData.map((pizza) => {
-              console.log(pizza);
-              return (
-                <Post
-                  name={pizza.name}
-                  popularity={pizza.popularity}
-                  description={pizza.cheese}
-                />
-              );
-            })}
+            <Posts />
           </div>
 
           <div class="col-lg col-sm post-column">One of three columns</div>
