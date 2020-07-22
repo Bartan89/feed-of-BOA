@@ -9,7 +9,7 @@ export default function Posts() {
     async function fetchDataFromApi() {
       // Getting back data from the net, through the wire, air, and the ocean:
       const APIRaw = await axios.get(
-        "http://my-json-server.typicode.com/Bartan89/feed-of-BOA/pizzas"
+        "https://raw.githubusercontent.com/Bartan89/feed-of-BOA/master/src/data/pizza.json"
       );
 
       set_pizzas(APIRaw.data);
