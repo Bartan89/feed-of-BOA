@@ -5,7 +5,7 @@ import Posts from "./components/Posts";
 import pizzaData from "./data/pizza.json";
 import "./App.css";
 
-//const menuItems = ["Home", "About", "Trending Articles", "Contact"];
+const menuItems = ["Home", "About", "Trending Articles", "Contact"];
 
 function App() {
   return (
@@ -18,9 +18,9 @@ function App() {
           </div>
           <div class="col-lg col-sm post-column">
             <ol>
-              {/* {menuItems.map((title, i) => {
+              {menuItems.map((title, i) => {
                 return <MenuItem title={title} index={i + 1} />;
-              })} */}
+              })}
             </ol>
           </div>
 
