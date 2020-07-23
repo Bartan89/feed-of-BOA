@@ -3,40 +3,45 @@
     "base": "thin",
     "sauce": "tomato",
     "toppings": ["salami", "ham", "mushrooms", "paprika"],
-    "name": "Ali's special pizza",
+    "name": "Pizza Funghi",
     "cheese": true,
-    "popularity": 5
+    "popularity": 4,
+    "img": "https://cdn.ekoplaza.nl/ekoplaza/recepten/medium/speltpizza-funghi.jpg"
   },
   {
     "base": "thin",
     "sauce": "tomato",
     "toppings": ["pineapple", "ham"],
-    "name": "Bart's and 15% of Australia sacrilege",
+    "name": "Pizza Hawaii",
     "cheese": true,
-    "popularity": 2
+    "popularity": 2,
+    "img": "https://i.pinimg.com/600x315/bc/df/a2/bcdfa26de2e76e5f226bf064df8d0225.jpg"
   },
   {
     "base": "thin",
     "sauce": "tomato",
     "toppings": ["rucola", "prosciutto", "parmeggiano"],
-    "name": "Truly Mediterranean",
+    "name": "Pizza Neapolitan",
     "cheese": true,
-    "popularity": 4
+    "popularity": 5,
+    "img": "https://www.thespruceeats.com/thmb/lrE044IWUCxtOxHp9oAJhZ4FsQM=/400x300/filters:no_upscale():max_bytes(150000):strip_icc()/close-up-view-on-pizza-on-white-wooden-background-with-ingridients--italian-cuisine--ready-to-eat--restaurant--food-menu--recipe--cafe-concept--1127363580-4964e6e1ab3640eab7a1d561fd92b94f.jpg"
   },
   {
     "base": "thin",
     "sauce": "tomato",
     "toppings": ["salami", "ham", "mushrooms", "paprika"],
-    "name": "Ali's special pizza",
+    "name": "Pizza BQQ chicken",
     "cheese": true,
-    "popularity": 5
+    "popularity": 2,
+    "img": "https://s23991.pcdn.co/wp-content/uploads/fly-images/66128/spanish-pizza-400x300-c.jpg"
   },
   {
     "base": "thin",
     "sauce": "tomato",
     "toppings": ["salami", "ham", "mushrooms", "paprika"],
-    "name": "Ali's special pizza",
+    "name": "Pizza Califorian Veggie",
     "cheese": true,
-    "popularity": 5
+    "popularity": 4,
+    "img": "https://cascade.madmimi.com/promotion_images/1348/7985/original/Gralic_Crust_Veggie_Pizza_thumbnail_400x300.jpg?1473840305"
   }
 ]

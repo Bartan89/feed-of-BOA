@@ -6,6 +6,7 @@ export default function Post(props) {
     <div>
       <span className="card m-2">
         <span className="card-body">
+          <img src={props.img} />
           <h5 className="card-title text-dark">{props.name}</h5>
           <p className="card-text text-dark">
             <Rating rating={props.popularity} />

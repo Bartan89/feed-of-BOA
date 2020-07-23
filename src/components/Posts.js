@@ -1,22 +1,11 @@
 import React, { useState, useEffect } from "react"
+import PizzaJson from "../data/pizza.json"
 import Post from "./Post"
-import axios from "axios"
-import ReactStars from "react-stars"
 
 export default function Posts() {
-  const [pizzas, set_pizzas] = useState([])
+  const [pizzas, set_pizzas] = useState(PizzaJson)
 
   const [sorted, sortedSet] = useState("name")
-
-  useEffect(() => {
-    async function fetchDataFromApi() {
-      // Getting back data from the net, through the wire, air, and the ocean:
-      const APIRaw = await axios.get("https://raw.githubusercontent.com/Bartan89/feed-of-BOA/master/src/data/pizza.json")
-
-      set_pizzas(APIRaw.data)
-    }
-    fetchDataFromApi()
-  }, [])
 
   let newSort
   if (sorted === "name") {
@@ -53,7 +42,7 @@ export default function Posts() {
           <option value="leastIngredients">Least ingredients</option>
         </select>
         {newSort.map(pizza => {
-          return <Post name={pizza.name} base={pizza.base} sauce={pizza.sauce} cheese={pizza.cheese} toppings={pizza.toppings} popularity={pizza.popularity} />
+          return <Post name={pizza.name} base={pizza.base} sauce={pizza.sauce} cheese={pizza.cheese} toppings={pizza.toppings} img={pizza.img} popularity={pizza.popularity} />
         })}
       </div>
     )
